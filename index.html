@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Radio Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Web Radio Player</h1>
+        </header>
+        
+        <main>
+            <div class="player-container">
+                <div class="now-playing">
+                    <h2 id="station-name">Selecione uma rádio</h2>
+                    <div class="status" id="status">Parado</div>
+                </div>
+                
+                <div class="controls">
+                    <button id="playPauseBtn" class="control-btn">
+                        <span class="play-icon">▶</span>
+                    </button>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="stations-list" id="stationsList">
+                <!-- Stations will be populated by JavaScript -->
+            </div>
+        </main>
+    </div>
+    <script src="radio-stations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
