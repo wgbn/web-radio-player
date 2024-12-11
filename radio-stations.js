@@ -2,7 +2,7 @@ const radioStations = [
     {
         id: 1,
         name: "RFM Portugal",
-        url: "	https://23603.live.streamtheworld.com/RFMAAC.aac"
+        url: "https://23603.live.streamtheworld.com/RFMAAC.aac"
     },
     {
         id: 2,
